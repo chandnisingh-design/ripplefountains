@@ -1,0 +1,479 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+.navbar{
+background-color: #16133c;
+}
+.banner{
+    /* background: linear-gradient(180deg, hsla(233, 68%, 10%, 1) 30%, hsla(247, 73%, 16%, 1) 68%, hsla(248, 87%, 36%, 1) 100%, hsla(247, 73%, 22%, 1) 100%); */
+    background: url(https://cdn.dribbble.com/users/1595839/screenshots/11700339/e213f973-e6b4-48f3-8b0f-eb5644b50475.gif);
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+}
+.banner-sec {
+    position: absolute;
+    right: 0;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner-sec .banner-right-cont {
+    position: absolute;
+    right: 0;
+    color: #ffffffa1;
+    width: 26%;
+    top: 160px;
+}
+.banner-right-cont p:before {
+    content: "";
+    width: 1px;
+    height: 85px;
+    position: absolute;
+    left: 0px;
+    background: #ffffffa1;
+    margin-top: 7px;
+}
+.banner-right-cont p {
+    padding-left: 20px;
+}
+/* .banner::before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-image: url(https://media.tenor.com/ksQ7IJ1kb54AAAAj/liquid-art-abstract-art.gif);
+    background-repeat: no-repeat;
+    right: 0px;
+    top: 0;
+    text-align: center;
+} */
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav, .navbar-brand
+{
+    color: white !important;
+}
+li.nav-item {
+    margin: 0 15px;
+}
+.navbar-light .navbar-nav a.nav-link{
+    color: #d3d3d38c;
+}
+.navbar-light .navbar-nav a.nav-link:hover{
+    color: #fff;
+}
+.banner h1 {
+    color: white;
+    font-size: 5rem;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    width: 50%;
+    font-weight: bold;
+}
+.banner h1:before {
+    content: "";
+    width: 60px;
+    position: absolute;
+    border: 1px solid #fff;
+    top: 205px;
+    left: 17px;
+}
+
+
+/* section2 */
+.tab-sec{
+    display: flex;
+}
+.tab_list {
+    height: 100vh;
+    width: 25%;
+    transition: all .2s linear;
+    background: #062c87;
+    color: #fff;
+    text-align: left;
+    padding: 10rem 25px;
+    border: 0.1px solid #ffffff14;
+}
+.tab_list:hover {
+    background: #0bb9b3;
+}
+/* .tab_list:hover::before {
+    background-image: url(https://img1.picmix.com/output/stamp/normal/3/2/0/5/475023_26bb4.gif);
+    content: "";
+    position: absolute;
+    width: 79%;
+    height: 100%;
+    top: 0;
+    right: 0;
+} */
+.tab_list_cont p {
+    font-size: 15px;
+    font-weight: 100;
+}
+.tab_list img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+    
+.tab_list:hover > .tab_list_cont{
+    opacity: 1;
+}
+.tab_list:hover > .tab_title > .subtext {
+    display: none;
+} 
+.tab_list_cont{
+    bottom: 0;
+    z-index: 4;
+    opacity: 0;
+    transition: opacity .3s;
+    width: 100%;
+    text-align: left;
+    color: #fff;
+}
+.tab_title .subtext {
+    color: #0e73b7;
+    display: block;
+    transition: display .3s;
+    letter-spacing: 2px;
+    font-family: cursive;
+    font-size: 12px
+}
+.tab_title img {
+    color: white;
+    filter: invert(1);
+    width: 40px;
+    margin: 23px 0;
+}
+.tab-sec {
+    
+    height: 100vh !important;
+}
+button {
+    width: 180px;
+    margin: 10px auto;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: transparent;
+    border: 0.1em solid #0e73b7;
+    border-radius: 0.1em;
+    padding: 1.6em 2em;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    }
+    
+button:hover {
+/* Generic Hover style for a button */
+    color: #fff;
+}
+
+button::after {
+    /* Adds the overlay for creating slide effect */
+    content: '';
+    position: absolute;
+    background-color: #0e73b7;
+    z-index: -1;
+    padding: 0.25em 0.5em;
+    display: block;
+    transition: all 0.35s;
+}
+
+button:hover::after {
+    /* Hover effect for the overlay slide effect */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.35s;
+}
+
+.right-slide::after {
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    right: -100%;
+}
+
+button:active,
+button:hover,
+button:focus
+{
+    border: 1px solid #0e73b7;
+    background: transparent;
+}
+
+
+
+/* Client List */
+.client-sec {
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    overflow: hidden;
+    /* background-image: linear-gradient(#382fd9, #060330); */
+  }
+  .client-list{
+    max-width: 1280px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .stack {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: toTheLeft 30s infinite linear;
+  }
+  
+  .client-sec img {
+    height: 90px;
+    width: 90px;
+    margin: 20px;
+    /* filter: invert(1) grayscale(100%); */
+  }
+  
+  .reverse {
+    animation: toTheRight 30s infinite linear;
+  }
+  .client-sec h2,
+  .ComNum-sec h2
+  {
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    padding: 30px 0;
+}
+.client-sec h2:before,
+.ComNum-sec h2:before
+{
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 2px;
+    background-color: #fff;
+    top: 83px;
+}
+.client-sec h2{
+    color: #000
+}
+.client-sec h2:before{
+    background-color: #000
+}
+
+  @keyframes toTheLeft {
+  
+    0% {
+  
+      transform: translateX(0%);
+  
+    }
+  
+    100% {
+  
+      transform: translateX(-100%);
+  
+    }
+  
+  }
+  
+  @keyframes toTheRight {
+  
+    0% {
+  
+      transform: translateX(-100%);
+  
+    }
+  
+    100% {
+  
+      transform: translateX(0%);
+  
+    }
+  
+  }
+
+  /* Company count */
+  .company-count {
+    display: flex;
+    flex-wrap: wrap;
+    background: #062c87;
+    width: 100%;
+    border-radius: 4px;
+}
+    
+  .count{
+    width:25%;
+    text-align:center;
+    color: #fff;
+  }
+  .ComNum-sec {
+    background-image: linear-gradient(#382fd9, #060330);
+}
+/* download forum */
+section#download-section {
+    background: #062c87;
+    color: #fff;
+}
+#download-section input#email {
+    height: 58px;
+    padding: 5px 55px;
+    background: #ffffff52;
+    border: 0;
+}
+#download-section input#email::placeholder{
+    color: #fff;
+}
+::placeholder, .form-select{
+    font-size: 14px;
+}
+.form-select{
+    height: 50px;
+}
+.form-control:focus, .form-control:focus-visible {
+    outline: 0;
+    box-shadow: none;
+}
+.form-label {
+    color: #0bb9b3;
+}
+#download-section input#email:focus-visible {
+    border: 0;
+    outline: 0;
+}
+/* footer */
+ul{
+	list-style: none;
+    padding: 0;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0 0;
+}
+.footer-col{
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+.footer-col p {
+    color: #bbbbbb;
+    display: grid;
+}
+.footer-col p span {
+    color: #fff;
+}
+.subfooter {
+    background-color: #141518;
+    color: #a9a9a9;
+    font-size: 10px;
+    padding: 10px;
+    text-align: center;
+}
+#form-elements button{
+    color: #060330;
+    font-size: 12px;
+}
+#form-elements button:hover{
+    color: #fff;
+}
+.location p {
+    font-size: 15px;
+    width: 63%;
+}
+.location span {
+    font-weight: bold;
+}
+
+
+/* fadein effect */
+.fadein {
+    opacity: 0;
+    transition: all 3s;
+    transform: translate(0, 100px);
+  }
+  
+  .fadein.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  .ripple {
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(0);
+    position: absolute;
+    opacity: 1;
+    z-index: 9;
+  }
+  .rippleEffect {
+      animation: rippleDrop .6s linear;
+  }
+  
+  @keyframes rippleDrop {
+    100% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+  }
