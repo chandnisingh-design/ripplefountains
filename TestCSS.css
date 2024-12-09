@@ -311,7 +311,9 @@ button#download-button::after {
 .form-select{
     height: 50px;
 }
-.form-control:focus, .form-control:focus-visible {
+.form-control:focus, .form-control:focus-visible,
+.form-select:focus, .form-select:focus-visible
+{
     outline: 0;
     box-shadow: none;
 }
