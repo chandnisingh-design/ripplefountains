@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="carousel.css"> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.js"></script>
 <!-- Option 1: Include in HTML -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -23,11 +25,15 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
 
-   
     <title>Ripples Fountains</title>
   </head>
   
   <body>
+    <div class="ripple-1"></div>
+    <div class="ripple-2"></div>
+    <div class="ripple-3"></div>
+    <div class="ripple-4"></div>
+    <div class="ripple-5"></div>
     <nav class="navbar navbar-expand-lg navbar-light pt-4">
       <div class="container">
         <a class="navbar-brand" href="#"><img src="logoimg.png"></a>
@@ -69,8 +75,11 @@
         <section class="tab-sec animation-group">
               <div class="tab_list" data-animation="fadeInUp">
                 <div class="tab_title">
-                  <img src="speed.png"/>
-                  <h3>Product</h3>
+                  <svg xmlns="http://www.w3.org/2000/svg" id="cast-icon" width="16" height="16" fill="currentColor" class="bi bi-cast" viewBox="0 0 16 16">
+                    <path d="m7.646 9.354-3.792 3.792a.5.5 0 0 0 .353.854h7.586a.5.5 0 0 0 .354-.854L8.354 9.354a.5.5 0 0 0-.708 0"/>
+                    <path d="M11.414 11H14.5a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5h-13a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5h3.086l-1 1H1.5A1.5 1.5 0 0 1 0 10.5v-7A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v7a1.5 1.5 0 0 1-1.5 1.5h-2.086z"/>
+                  </svg>
+                  <h3>Multimedia Shows</h3>
                   <p class="subtext">This is lorem ipsum</p>
                 </div>
                 <div class="tab_list_cont">
@@ -80,8 +89,10 @@
               </div>
               <div class="tab_list" data-animation="fadeInUp">
                 <div class="tab_title">
-                  <img src="speed.png"/>
-                  <h3>Performance</h3>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-water" viewBox="0 0 16 16">
+                    <path d="M.036 3.314a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 3.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 6.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 9.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.757-.703a.5.5 0 0 1-.278-.65"/>
+                  </svg>
+                  <h3>Water Fountains</h3>
                   <p class="subtext">This is lorem ipsum</p>
                 </div>
                 <div class="tab_list_cont">
@@ -91,8 +102,10 @@
               </div>
               <div class="tab_list" data-animation="fadeInUp">
                 <div class="tab_title">
-                  <img src="speed.png"/>
-                  <h3>Media</h3>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-life-preserver" viewBox="0 0 16 16">
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m6.43-5.228a7.03 7.03 0 0 1-3.658 3.658l-1.115-2.788a4 4 0 0 0 1.985-1.985zM5.228 14.43a7.03 7.03 0 0 1-3.658-3.658l2.788-1.115a4 4 0 0 0 1.985 1.985zm9.202-9.202-2.788 1.115a4 4 0 0 0-1.985-1.985l1.115-2.788a7.03 7.03 0 0 1 3.658 3.658m-8.087-.87a4 4 0 0 0-1.985 1.985L1.57 5.228A7.03 7.03 0 0 1 5.228 1.57zM8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                  </svg>
+                  <h3>Prefab Water Feature</h3>
                   <p class="subtext">This is lorem ipsum</p>
                 </div>
                 <div class="tab_list_cont">
@@ -102,8 +115,11 @@
               </div>
               <div class="tab_list" data-animation="fadeInUp">
                 <div class="tab_title">
-                  <img src="speed.png"/>
-                  <h3>Product Service</h3>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-rolodex" viewBox="0 0 16 16">
+                    <path d="M8 9.05a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                    <path d="M1 1a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h.5a.5.5 0 0 0 .5-.5.5.5 0 0 1 1 0 .5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5.5.5 0 0 1 1 0 .5.5 0 0 0 .5.5h.5a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H6.707L6 1.293A1 1 0 0 0 5.293 1zm0 1h4.293L6 2.707A1 1 0 0 0 6.707 3H15v10h-.085a1.5 1.5 0 0 0-2.4-.63C11.885 11.223 10.554 10 8 10c-2.555 0-3.886 1.224-4.514 2.37a1.5 1.5 0 0 0-2.4.63H1z"/>
+                  </svg>
+                  <h3>News & Trade Shows</h3>
                   <p class="subtext">This is lorem ipsum</p>
                 </div>
                 <div class="tab_list_cont">
@@ -113,185 +129,400 @@
               </div>
            
         </section>
+
+        <section class="ComNum-sec text-center py-5" data-animation="pulse">
+          <div class="container">
+          <h2>Company Progress</h2>
+          <p class="sub-content">Successfully completed projects for the Government of India</p>
+          <div class="company-count justify-content-center container">
+            <div class="count">
+                <h2 data-count="32+" class="counter">32+</h2>
+                <p>
+                    Years of Experience
+                </p>
+            </div>
+            <div class="count">
+                <h2 data-count="2,000+" class="counter">2,000+</h2>
+                <p>
+                    Projects Executed
+                </p>
+            </div>
+            <div class="count">
+                <h2 data-count="120+" class="counter">120+</h2>
+                <p>
+                    Team Members on role
+                </p>
+            </div>
+            <div class="count">
+                <h2 data-count="30+" class="counter">30+</h2>
+                <p>
+                    Project location world wide
+                </p>
+            </div>
+          </div>
+        </div>
+        </section>
   
-      <section class="clients my-5">
-        <div class="container">
-        <h2 data-animation="pulse">Our Valuable Clients</h2>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="owl-carousel owl-theme clients-carousel">
-          <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776533/1_befu7u.png"></div>
-          <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776542/2_hmnhbj.png"></div>
-          <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776563/3_nkeq4k.png"></div>
-          <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776586/4_kocpoi.png"></div>
-          <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776603/5_n711f2.png"></div>
-          <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776612/6_jxhirl.png"></div>
-          <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776627/7_xc8ala.png"></div>
-          <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776646/8_paofta.png"></div>
+        <section class="clients py-5" data-animation="pulse">
+          <div class="container">
+          <h2>Trusted By</h2>
+          <p class="sub-content">Our happy clients in the public and private sector !</p>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="owl-carousel owl-theme clients-carousel">
+            <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776533/1_befu7u.png"></div>
+            <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776542/2_hmnhbj.png"></div>
+            <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776563/3_nkeq4k.png"></div>
+            <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776586/4_kocpoi.png"></div>
+            <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776603/5_n711f2.png"></div>
+            <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776612/6_jxhirl.png"></div>
+            <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776627/7_xc8ala.png"></div>
+            <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776646/8_paofta.png"></div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="owl-carousel owl-theme clients-carousel2">
-          <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776533/1_befu7u.png"></div>
-          <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776542/2_hmnhbj.png"></div>
-          <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776563/3_nkeq4k.png"></div>
-          <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776586/4_kocpoi.png"></div>
-          <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776603/5_n711f2.png"></div>
-          <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776612/6_jxhirl.png"></div>
-          <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776627/7_xc8ala.png"></div>
-          <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776646/8_paofta.png"></div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="owl-carousel owl-theme clients-carousel2">
+            <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776533/1_befu7u.png"></div>
+            <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776542/2_hmnhbj.png"></div>
+            <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776563/3_nkeq4k.png"></div>
+            <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776586/4_kocpoi.png"></div>
+            <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776603/5_n711f2.png"></div>
+            <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776612/6_jxhirl.png"></div>
+            <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776627/7_xc8ala.png"></div>
+            <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776646/8_paofta.png"></div>
+          </div>
         </div>
       </div>
-    </div>
-</div>
-        
-      </section>
-
-      <section class="ComNum-sec text-center">
-        <h2 data-animation="pulse">By The Numbers</h2>
-        <div class="company-count justify-content-center container">
-          <div class="count">
-              <h2 data-count="32+" class="counter">32+</h2>
-              <p>
-                  Years of Experience
-              </p>
-          </div>
-          <div class="count">
-              <h2 data-count="2,000+" class="counter">2,000+</h2>
-              <p>
-                  Projects Executed
-              </p>
-          </div>
-          <div class="count">
-              <h2 data-count="120+" class="counter">120+</h2>
-              <p>
-                  Team Members on role
-              </p>
-          </div>
-          <div class="count">
-              <h2 data-count="30+" class="counter">30+</h2>
-              <p>
-                  Project location world wide
-              </p>
+      <div class="row pb-5">
+        <div class="col-md-12">
+          <div class="owl-carousel owl-theme clients-carousel">
+            <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776533/1_befu7u.png"></div>
+            <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776542/2_hmnhbj.png"></div>
+            <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776563/3_nkeq4k.png"></div>
+            <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776586/4_kocpoi.png"></div>
+            <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776603/5_n711f2.png"></div>
+            <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776612/6_jxhirl.png"></div>
+            <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776627/7_xc8ala.png"></div>
+            <div class="item box"><img alt="client logo" class="client-img" src="https://res.cloudinary.com/oralyildiz/image/upload/v1629776646/8_paofta.png"></div>
           </div>
         </div>
-      </section>
+      </div>
+  </div>
+          
+        </section>
 
-      <section class="container my-5">
-        <div class="row pt-4 mt-lg-3 pb-5 mb-lg-4 mb-xl-5" id="form-elements">
-          <div class="col-md-4" data-animation="fadeInLeft">
-            <h1 class="mb-md-4 h1 fc-3 fw-bold"><span class="fc-1">Contact</span> Us</h1>
-            <p class="fs-11 pt-1 pb-4 mb-1 mb-lg-3 fc-6">Whatwver your need, we are looking forward to hearing from you !</p>
-            <ul class="list-unstyled pb-2 pb-lg-4">
-              <li class="mb-3 mb-lg-4">
-                <span class="d-block fs-sm fc-6">Working Time</span>
-                <p class="pb-1 mb-2 fs-115r">Mon ~ Fri 9:00 ~ 18:00<br>Sat 9:00 ~ 12:00</p>
-              </li>
-              <li class="mb-3 mb-lg-4">
-                <span class="d-block fs-sm fc-6">Phone</span>
-                <a href="tel:0282263730" class="fc-2 fs-115r px-0">01-2345-6789</a>
-              </li>
-              <li class="mb-3 mb-lg-4">
-                <span class="d-block fs-sm fc-6">Locations</span>
-                <div class="location mb-1">
-                  <p>
-                    <span>Factory:</span> C-119, Hosiery Complex,
-                    phase 2 Extension Noid,
-                    Utter Pradesh(201305)
-                    </p>
-                    <p>
-                      <span>Gurgaon:</span> 418, Vipul Trade Center,
-                      Sohna Road,
-                      Gurgaon(122018)
-                      </p>
-                </div>
-                <a href="https://www.google.com/maps/dir/28.3965987,76.9718624/Ripples+Engineering+Private+Limited,+C-119,+Hosiery+Complex,+Noida+Phase-2,+Noida,+Uttar+Pradesh+201305/@28.4884917,76.856323,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x390ce8c4c7d857a9:0xdc05dc0454afc434!2m2!1d77.412093!2d28.534322?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="fs-sm fc-link"><u>Google Map</u></a>
-              </li>
-            </ul>
-          </div>
-          <form data-animation="fadeInLeft" class="col-xl-7 col-md-8 offset-xl-1 needs-validation" novalidate="" id="gform" method="post" action="<Your Form Action>">
+        <section class="media-coverage py-5" data-animation="fadeInLeft">
+          <h2>Media Coverage</h1>
+          <p class="sub-content">Successfully completed projects for the Government of India</p>
+          <div class="container">
             <div class="row">
-              <div class="col-sm-6 mb-4">
-                <label for="name" class="form-label"><i class="fa-solid bi bi-person-fill me-2"></i>Full Name</label>
-                <input type="text" id="name" name="Name" class="form-control form-control-lg" required="" placeholder="Your Name" maxlength="60">
-                <div class="invalid-feedback">Required!</div>
+              <div class="col-md-4">
+                <figure class="snip">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample27.jpg" alt="sq-sample27" />
+                  <figcaption>
+                    <p>I say, if your knees aren't green by the end of the day, you ought to seriously re-examine your life.</p>
+                    <div class="heading">
+                      <h2>My<span> Hobby</span></h2>
+                    </div>
+                  </figcaption>
+                  <a href="#"></a>
+                </figure>
               </div>
-              <div class="col-sm-6 mb-4">
-                <label for="email" class="form-label"><i class="fa-solid bi bi-envelope-at-fill me-2"></i>Emaill Id</label>
-                <input type="email" id="email" name="Email" class="form-control form-control-lg" required="" placeholder="Your Email Address!" maxlength="100">
-                <div class="invalid-feedback">Required / Error Format!</div>
+              <div class="col-md-4">
+                <figure class="snip">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample27.jpg" alt="sq-sample27" />
+                  <figcaption>
+                    <p>I say, if your knees aren't green by the end of the day, you ought to seriously re-examine your life.</p>
+                    <div class="heading">
+                      <h2>My<span> Hobby</span></h2>
+                    </div>
+                  </figcaption>
+                  <a href="#"></a>
+                </figure>
               </div>
-              
-              <div class="col-sm-6 mb-4">
-                <label for="phone" class="form-label"><i class="fa-solid bi bi-telephone-fill me-2"></i>Mobile number</label>
-                <input type="tel" id="phone" name="Phone" class="form-control form-control-lg" required="" data-format="custom" data-delimiter="-" data-blocks="2 3 4" data-numeral="9" placeholder="Your Phone Number" pattern="[0-9\d\-*+#,;]*" minlength="10" maxlength="20">
-                <div class="invalid-feedback">Required / Error Format!</div>
+              <div class="col-md-4">
+                <figure class="snip">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample27.jpg" alt="sq-sample27" />
+                  <figcaption>
+                    <p>I say, if your knees aren't green by the end of the day, you ought to seriously re-examine your life.</p>
+                    <div class="heading">
+                      <h2>My<span> Hobby</span></h2>
+                    </div>
+                  </figcaption>
+                  <a href="#"></a>
+                </figure>
               </div>
-              <div class="col-sm-6 mb-4">
-                <label for="subject" class="form-label"><i class="fa-solid bi bi-tags-fill me-2"></i>Select Subject</label>
-                <select id="subject" class="form-select form-select-lg" name="Subject" required="">
-                  <option value="" selected="" disabled="">Please Select</option>
-                  <option value="Appointment">Enquiry</option>
-                  <option value="Pricing">Service Request</option>
-                </select>
-                <div class="invalid-feedback">Required!</div>
+              <div class="col-md-4">
+                <figure class="snip">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample27.jpg" alt="sq-sample27" />
+                  <figcaption>
+                    <p>I say, if your knees aren't green by the end of the day, you ought to seriously re-examine your life.</p>
+                    <div class="heading">
+                      <h2>My<span> Hobby</span></h2>
+                    </div>
+                  </figcaption>
+                  <a href="#"></a>
+                </figure>
               </div>
-              <div class="col-12 mb-4">
-                <label for="message" class="form-label"><i class="fa-solid bi bi-pencil-square me-2"></i>Enter Message</label>
-                <textarea id="message" name="Message" class="form-control form-control-lg" rows="4" required="" placeholder="Write Comment Here..." maxlength="300"></textarea>
-                <div class="invalid-feedback">Required!</div>
+              <div class="col-md-4">
+                <figure class="snip">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample27.jpg" alt="sq-sample27" />
+                  <figcaption>
+                    <p>I say, if your knees aren't green by the end of the day, you ought to seriously re-examine your life.</p>
+                    <div class="heading">
+                      <h2>My<span> Hobby</span></h2>
+                    </div>
+                  </figcaption>
+                  <a href="#"></a>
+                </figure>
               </div>
-            </div>
-            <div class="g-recaptcha" data-sitekey="6LcLbMUfAAAAADl3ZYTYPESh3TD_yzth8raTOgo4" data-callback="verifyCaptcha">
-              <div style="width: 304px; height: 78px;">
-                <div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcLbMUfAAAAADl3ZYTYPESh3TD_yzth8raTOgo4&amp;co=aHR0cHM6Ly9jY2wuY29tLnR3OjQ0Mw..&amp;hl=en&amp;v=jF-AgDWy8ih0GfLx4Semh9UK&amp;size=normal&amp;cb=j8lh0k4kf73" width="304" height="78" role="presentation" name="a-y4fwkamq2mz0" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
-              </div><iframe style="display: none;"></iframe>
-            </div>
-            <div id="g-recaptcha-error"></div>
-            <br>
-            <button type="submit" class="right-slide me-3"><i class="fa-solid bi bi-send-fill me-2"></i>Send</button>
-            <button type="reset" class="right-slide"><i class="fa-solid bi bi-arrow-clockwise me-2"></i>Reset</button>
-          </form>
-        </div>
-      </section>
+              <div class="col-md-4">
+                <figure class="snip">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample27.jpg" alt="sq-sample27" />
+                  <figcaption>
+                    <p>I say, if your knees aren't green by the end of the day, you ought to seriously re-examine your life.</p>
+                    <div class="heading">
+                      <h2>My<span> Hobby</span></h2>
+                    </div>
+                  </figcaption>
+                  <a href="#"></a>
+                </figure>
+              </div>
 
-      <section id="download-section" data-animation="pulse">
-        <div class="container p-5 text-center">
-          <div class="row">
-            <div class="col-md-12">
-              <h2>Download Our Forum</h2>
-                <p>Select the files you want to download and it will send to your email id.</p>
-                <div class="d-flex justify-content-center">
-                  <div class="file-checkbox me-2">
-                    <input type="checkbox" id="file1" name="files">
-                    <label for="file1">Our Profile</label>
-                </div>
-                <div class="file-checkbox ms-2">
-                    <input type="checkbox" id="file2" name="files">
-                    <label for="file2">Client List</label>
-                </div>
-                </div>
-               
-            </div>
-            <div class="col-md-12">
-              <div class="email-input mt-5 d-flex justify-content-center" data-animation="fadeInUp">
-                <input type="email" id="email" name="email" required placeholder="Enter Your Email">
-                <button type="submit" id="download-button" class="right-slide m-0 p-0">Download <i class="bi bi-cloud-download-fill"></i></button>
-            </div>
             </div>
           </div>
-        </div>
+        </section>
+
+        <section class="testimonial-area py-5" data-animation="pulse">
+          <div class="container">
+            <h2>Our Clients Testimonial</h2>
+            <p class="sub-content">What Our Valuable Clients Say About Us</p>
+            <div class="testimonial-content owl-carousel">
+              <!-- Single Testimonial -->
+              <div class="single-testimonial">
+                <div class="round-1 round"></div>
+                <div class="round-2 round"></div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                <div class="client-info">
+                  <div class="client-img">
+                    <img src="Photo.jpeg" alt="">
+                  </div>
+                  <div class="client-details">
+                    <h6>Yeasin Arafat</h6>
+                    <span>Designer, LLCG Team</span>
+                  </div>
+                </div>
         
-    
-      
-    </section>
+              </div>
+              <!-- Single Testimonial -->
+              <div class="single-testimonial">
+                <div class="round-1 round"></div>
+                <div class="round-2 round"></div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                <div class="client-info">
+                  <div class="client-img">
+                    <img src="Photo.jpeg" alt="">
+                  </div>
+                  <div class="client-details">
+                    <h6>Yeasin Arafat</h6>
+                    <span>Designer, LLCG Team</span>
+                  </div>
+                </div>
+        
+              </div>
+              <!-- Single Testimonial -->
+              <div class="single-testimonial">
+                <div class="round-1 round"></div>
+                <div class="round-2 round"></div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                <div class="client-info">
+                  <div class="client-img">
+                    <img src="Photo.jpeg" alt="">
+                  </div>
+                  <div class="client-details">
+                    <h6>Yeasin Arafat</h6>
+                    <span>Designer, LLCG Team</span>
+                  </div>
+                </div>
+        
+              </div>
+              <!-- Single Testimonial -->
+              <div class="single-testimonial">
+                <div class="round-1 round"></div>
+                <div class="round-2 round"></div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                <div class="client-info">
+                  <div class="client-img">
+                    <img src="Photo.jpeg" alt="">
+                  </div>
+                  <div class="client-details">
+                    <h6>Yeasin Arafat</h6>
+                    <span>Designer, LLCG Team</span>
+                  </div>
+                </div>
+        
+              </div>
+              <!-- Single Testimonial -->
+              <div class="single-testimonial">
+                <div class="round-1 round"></div>
+                <div class="round-2 round"></div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                <div class="client-info">
+                  <div class="client-img">
+                    <a href="#"><img src="Photo.jpeg" alt=""></a>
+                  </div>
+                  <div class="client-details">
+                    <h6>Yeasin Arafat</h6>
+                    <span>Designer, LLCG Team</span>
+                  </div>
+                </div>
+        
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="container py-5">
+          <div class="row p-5" id="form-elements">
+            <div class="col-md-4" data-animation="fadeInLeft">
+              <h1 class="mb-md-4">Contact Us</h1>
+              <p class="fs-11 pt-1 pb-4 mb-1 mb-lg-3 fc-6">Whatwver your need, we are looking forward to hearing from you !</p>
+              <ul class="list-unstyled pb-2 pb-lg-4">
+                <li class="mb-3 mb-lg-4">
+                  <span class="d-block fs-sm fc-6">Working Time</span>
+                  <p class="pb-1 mb-2 fs-115r">Mon ~ Fri 9:00 ~ 18:00<br>Sat 9:00 ~ 12:00</p>
+                </li>
+                <li class="mb-3 mb-lg-4">
+                  <span class="d-block fs-sm fc-6">Phone</span>
+                  <a href="tel:0282263730" class="fc-2 fs-115r px-0">01-2345-6789</a>
+                </li>
+                <li class="mb-3 mb-lg-4">
+                  <span class="d-block fs-sm fc-6">Locations</span>
+                  <div class="location mb-1">
+                    <p>
+                      <span>Factory:</span> C-119, Hosiery Complex,
+                      phase 2 Extension Noid,
+                      Utter Pradesh(201305)
+                      </p>
+                      <p>
+                        <span>Gurgaon:</span> 418, Vipul Trade Center,
+                        Sohna Road,
+                        Gurgaon(122018)
+                        </p>
+                  </div>
+                  <a href="https://www.google.com/maps/dir/28.3965987,76.9718624/Ripples+Engineering+Private+Limited,+C-119,+Hosiery+Complex,+Noida+Phase-2,+Noida,+Uttar+Pradesh+201305/@28.4884917,76.856323,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x390ce8c4c7d857a9:0xdc05dc0454afc434!2m2!1d77.412093!2d28.534322?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="fs-sm fc-link"><u>Google Map</u></a>
+                </li>
+              </ul>
+            </div>
+            <form data-animation="fadeInLeft" class="col-xl-7 col-md-8 offset-xl-1 needs-validation" novalidate="" id="gform" method="post" action="<Your Form Action>">
+              <div class="row">
+                <div class="col-sm-6 mb-4">
+                  <label for="name" class="form-label"><i class="fa-solid bi bi-person-fill me-2"></i>Full Name</label>
+                  <input type="text" id="name" name="Name" class="form-control form-control-lg" required="" placeholder="Your Name" maxlength="60">
+                  <div class="invalid-feedback">Required!</div>
+                </div>
+                <div class="col-sm-6 mb-4">
+                  <label for="email" class="form-label"><i class="fa-solid bi bi-envelope-at-fill me-2"></i>Emaill Id</label>
+                  <input type="email" id="email" name="Email" class="form-control form-control-lg" required="" placeholder="Your Email Address!" maxlength="100">
+                  <div class="invalid-feedback">Required / Error Format!</div>
+                </div>
+                
+                <div class="col-sm-6 mb-4">
+                  <label for="phone" class="form-label"><i class="fa-solid bi bi-telephone-fill me-2"></i>Mobile number</label>
+                  <input type="tel" id="phone" name="Phone" class="form-control form-control-lg" required="" data-format="custom" data-delimiter="-" data-blocks="2 3 4" data-numeral="9" placeholder="Your Phone Number" pattern="[0-9\d\-*+#,;]*" minlength="10" maxlength="20">
+                  <div class="invalid-feedback">Required / Error Format!</div>
+                </div>
+                <div class="col-sm-6 mb-4">
+                  <label for="subject" class="form-label"><i class="fa-solid bi bi-tags-fill me-2"></i>Select Subject</label>
+                  <select id="subject" class="form-select form-select-lg" name="Subject" required="">
+                    <option value="" selected="" disabled="">Please Select</option>
+                    <option value="Appointment">Enquiry</option>
+                    <option value="Pricing">Service Request</option>
+                  </select>
+                  <div class="invalid-feedback">Required!</div>
+                </div>
+                <div class="col-12 mb-4">
+                  <label for="message" class="form-label"><i class="fa-solid bi bi-pencil-square me-2"></i>Enter Message</label>
+                  <textarea id="message" name="Message" class="form-control form-control-lg" rows="4" required="" placeholder="Write Comment Here..." maxlength="300"></textarea>
+                  <div class="invalid-feedback">Required!</div>
+                </div>
+              </div>
+              <div class="g-recaptcha" data-sitekey="6LcLbMUfAAAAADl3ZYTYPESh3TD_yzth8raTOgo4" data-callback="verifyCaptcha">
+                <div style="width: 304px; height: 78px;">
+                  <div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcLbMUfAAAAADl3ZYTYPESh3TD_yzth8raTOgo4&amp;co=aHR0cHM6Ly9jY2wuY29tLnR3OjQ0Mw..&amp;hl=en&amp;v=jF-AgDWy8ih0GfLx4Semh9UK&amp;size=normal&amp;cb=j8lh0k4kf73" width="304" height="78" role="presentation" name="a-y4fwkamq2mz0" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                </div><iframe style="display: none;"></iframe>
+              </div>
+              <div id="g-recaptcha-error"></div>
+              <br>
+              <button type="submit" class="right-slide me-3"><i class="fa-solid bi bi-send-fill me-2"></i>Send</button>
+              <button type="reset" class="right-slide"><i class="fa-solid bi bi-arrow-clockwise me-2"></i>Reset</button>
+            </form>
+          </div>
+        </section>
+
+        <section id="download-section" data-animation="pulse">
+          <div class="container p-5 text-center">
+            <div class="row">
+              <h2>Download Our Catalogues</h2>
+              <p>Select the files you want to download and it will send to your email id.</p>
+              <div class="col-md-12 mt-5">
+                <div class="row">
+                      <div class="col-md-3">
+                          <div class="file-checkbox me-2">
+                            <i class="bi bi-person-lines-fill"></i>
+                            <div class="">
+                              <input type="checkbox" id="file1" name="files">
+                              <label for="file1">Our Profile</label>
+                            </div>
+                        </div>
+                      </div>
+                    <div class="col-md-3">
+                      <div class="file-checkbox ms-2">
+                        <i class="bi bi-person-lines-fill"></i>
+                        <div class="">
+                          <input type="checkbox" id="file2" name="files">
+                         <label for="file2">Client List</label>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="file-checkbox me-2">
+                      <i class="bi bi-person-lines-fill"></i>
+                      <div class="">
+                        <input type="checkbox" id="file1" name="files">
+                        <label for="file1">Our Profile</label>
+                      </div>
+                  </div>
+                </div>
+                  <div class="col-md-3">
+                    <div class="file-checkbox ms-2">
+                      <i class="bi bi-person-lines-fill"></i>
+                      <div class="">
+                        <input type="checkbox" id="file2" name="files">
+                      <label for="file2">Client List</label>
+                      </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="email-input d-flex justify-content-center" data-animation="fadeInUp">
+                  <input type="email" id="email" name="email" required placeholder="Enter Your Email">
+                  <button type="submit" id="download-button" class="right-slide m-0 p-0">Download <i class="bi bi-cloud-download-fill"></i></button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+      </section>
 
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 footer-col location" data-animation="fadeInLeft">
+          <!-- <div class="col-md-4 footer-col location" data-animation="fadeInLeft">
             <img src="logoimg.png">
             <p>
             <span>Factory:</span> C-119, Hosiery Complex,
@@ -303,9 +534,21 @@
               Sohna Road,
               Gurgaon(122018)
               </p>
+          </div> -->
+          <div class="col-md-3 footer-col" data-animation="fadeInLeft">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Company Progress</a></li>
+              <li><a href="#">Our Trusted Partners</a></li>
+              <li><a href="#">Media Coverage</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Download Catalogues</a></li>
+              <li><a href="#">Career</a></li>
+            </ul>
           </div>
-          <div class="col-md-4 footer-col" data-animation="fadeInLeft">
-            <h4>company</h4>
+          <div class="col-md-3 footer-col" data-animation="fadeInLeft">
+            <h4>Company</h4>
             <ul>
               <li><a href="#">Our Journey</a></li>
               <li><a href="#">Multimedia Shows</a></li>
@@ -314,7 +557,16 @@
               <li><a href="#">News & Trade Shows</a></li>
             </ul>
           </div>
-          <div class="col-md-4 footer-col">
+          <div class="col-md-3 footer-col">
+            <h4>We are certified by</h4>
+            <div class="cerificate-links" data-animation="fadeInLeft">
+              <ul>
+                <li> <a href="#">ISO 27001:2013</a></li>
+                <li><a href="#">ISO/IEC TS 20000-11:2021</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 footer-col">
             <h4>follow us</h4>
             <div class="social-links" data-animation="fadeInLeft">
               <a href="#"><i class="bi bi-facebook"></i></a>
@@ -323,6 +575,7 @@
               <a href="#"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
+         
         </div>
       </div>
       <div class="subfooter"><p class="m-0">© Copyright 2022 by Ripples Engineering Pvt. Ltd. All rights reserved. || Designed & maintained by CodSkora Web Pvt. Ltd</p></div>
@@ -387,7 +640,6 @@ $(document).ready(function() {
 //form
 // Validation
 (function () {
-  "use strict";
   var forms = document.querySelectorAll(".needs-validation");
   Array.prototype.slice.call(forms).forEach(function (form) {
     form.addEventListener(
@@ -492,6 +744,26 @@ $(".clients-carousel2").owlCarousel({
   }
 });
 
+</script>
+
+<script>
+  $(".testimonial-content").owlCarousel({
+	loop: true,
+	items: 2,
+	dots: true,
+	nav: false,
+	mouseDrag: true,
+	autoplay:true,
+	autoplayTimeout: 4000,
+	smartSpeed: 800
+});
+</script>
+<script>
+  $('body, .banner').ripples({
+  resolution: 512,
+  dropRadius: 20,
+  perturbance: 0.04,
+});
 </script>
   </body>
 </html>
